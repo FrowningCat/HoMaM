@@ -1,0 +1,115 @@
+$bgColor: #000;
+$titleTextColor: #bdbdbd;
+$titleCapitalletterTextColor: #ed1b24;
+$bgButtonColor: #ed1b24;
+$textButtonColor: #fefddf;
+
+$textSizeProject: 1rem;
+$textSizeCompany: 3rem;
+$textSizeButton: 1.25rem;
+
+.landing {
+    box-sizing: border-box;
+    display: flex;
+    background-color: $bgColor;
+    &__header {
+        width: 100vw;
+        height: 100vh;
+        &__title {
+            display: grid;
+            width: 25rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            gap: 3.2rem;
+            &__nameCompany {
+                font-size: $textSizeProject;
+                color: $titleTextColor;
+                &__capitalLetter {
+                    color: $titleCapitalletterTextColor;
+                }
+            }
+            &__nameProject {
+                font-size: $textSizeCompany;
+                color: $titleTextColor;
+            }
+            &__button {
+                font-size: $textSizeButton;
+                border: none;
+                height: 2rem;
+                border-radius: 12px 0;
+                background-color: $bgButtonColor;
+                color: $textButtonColor;
+                background-color: $bgButtonColor;
+                cursor: pointer;
+            }
+        }
+        &__MaskGroup {
+            position: absolute;
+            right: 0%;
+            width: 13rem;
+            height: 100vh;
+            pointer-events: none;
+        }
+        &__pattern {
+            width: 15rem;
+            height: 3rem;
+            left: 10%;
+            top: 10%;
+            position: absolute;
+            pointer-events: none;
+        }
+        &__x {
+            left: 5%;
+            top: 80%;
+            width: 3rem;
+            height: 3rem;
+            position: absolute;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .landing {
+        &__header {
+            &__MaskGroup {
+                width: 10rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 595px) {
+    .landing {
+        &__header {
+            &__MaskGroup {
+                width: 7rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .landing {
+        &__header {
+            &__MaskGroup {
+                width: 5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .landing {
+        &__header {
+            &__MaskGroup {
+                display: none;
+            }
+        }
+    }
+}

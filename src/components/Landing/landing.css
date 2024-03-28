@@ -1,0 +1,86 @@
+.landing {
+  box-sizing: border-box;
+  display: flex;
+  background-color: #000;
+}
+.landing__header {
+  width: 100vw;
+  height: 100vh;
+}
+.landing__header__title {
+  display: grid;
+  width: 25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+.landing__header__title__nameCompany {
+  font-size: 1rem;
+  color: #bdbdbd;
+}
+.landing__header__title__nameCompany__capitalLetter {
+  color: #ed1b24;
+}
+.landing__header__title__nameProject {
+  font-size: 3rem;
+  color: #bdbdbd;
+}
+.landing__header__title__button {
+  font-size: 1.25rem;
+  border: none;
+  height: 2rem;
+  border-radius: 12px 0;
+  background-color: #ed1b24;
+  color: #fefddf;
+  background-color: #ed1b24;
+  cursor: pointer;
+}
+.landing__header__MaskGroup {
+  position: absolute;
+  right: 0%;
+  width: 13rem;
+  height: 100vh;
+  pointer-events: none;
+}
+.landing__header__pattern {
+  width: 15rem;
+  height: 3rem;
+  left: 10%;
+  top: 10%;
+  position: absolute;
+  pointer-events: none;
+}
+.landing__header__x {
+  left: 5%;
+  top: 80%;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .landing__header__MaskGroup {
+    width: 10rem;
+  }
+}
+@media (max-width: 595px) {
+  .landing__header__MaskGroup {
+    width: 7rem;
+  }
+}
+@media (max-width: 400px) {
+  .landing__header__MaskGroup {
+    width: 5rem;
+  }
+}
+@media (max-width: 360px) {
+  .landing__header__MaskGroup {
+    display: none;
+  }
+}/*# sourceMappingURL=landing.css.map */

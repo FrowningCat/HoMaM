@@ -1,5 +1,7 @@
 $bgColor: #000;
 $titleTextColor: #bdbdbd;
+$aboutTitleTextColor: #fefddf;
+$aboutTextColor: #fff;
 $titleCapitalletterTextColor: #ed1b24;
 $bgButtonColor: #ed1b24;
 $textButtonColor: #fefddf;
@@ -7,11 +9,14 @@ $textButtonColor: #fefddf;
 $textSizeProject: 1rem;
 $textSizeCompany: 3rem;
 $textSizeButton: 1.25rem;
+$textSizeTitle: 2rem;
+$textSizeAbout: 1.8rem;
 
 .landing {
     box-sizing: border-box;
-    display: flex;
+    display: grid;
     background-color: $bgColor;
+    overflow: hidden;
     &__header {
         width: 100vw;
         height: 100vh;
@@ -72,6 +77,65 @@ $textSizeButton: 1.25rem;
             cursor: pointer;
         }
     }
+    &__about {
+        width: 100vw;
+        height: 100vh;
+        &__blokContext {
+            display: grid;
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            gap: 5rem;
+            transform: translate(-50%, -50%);
+            align-items: center;
+            text-align: center;
+            &__title {
+                font-size: $textSizeTitle;
+                color: $aboutTitleTextColor;
+            }
+            &__line {
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20rem;
+                height: 1rem;
+                pointer-events: none;
+            }
+            &__text {
+                font-size: $textSizeAbout;
+                color: $aboutTextColor;
+            }
+        }
+        &__mask {
+            position: absolute;
+            left: 0%;
+            width: 40rem;
+            height: 90vh;
+            pointer-events: none;
+            overflow: hidden;
+        }
+    }
+}
+
+@media (max-width: 1550px) {
+    .landing {
+        &__about {
+            &__mask {
+                width: 30rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .landing {
+        &__about {
+            &__mask {
+                width: 20rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 680px) {
@@ -79,6 +143,11 @@ $textSizeButton: 1.25rem;
         &__header {
             &__MaskGroup {
                 width: 10rem;
+            }
+        }
+        &__about {
+            &__mask {
+                width: 15rem;
             }
         }
     }
@@ -89,6 +158,11 @@ $textSizeButton: 1.25rem;
         &__header {
             &__MaskGroup {
                 width: 7rem;
+            }
+        }
+        &__about {
+            &__mask {
+                display: none;
             }
         }
     }

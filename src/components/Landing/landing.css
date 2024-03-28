@@ -1,7 +1,8 @@
 .landing {
   box-sizing: border-box;
-  display: flex;
+  display: grid;
   background-color: #000;
+  overflow: hidden;
 }
 .landing__header {
   width: 100vw;
@@ -63,15 +64,70 @@
   position: absolute;
   cursor: pointer;
 }
+.landing__about {
+  width: 100vw;
+  height: 100vh;
+}
+.landing__about__blokContext {
+  display: grid;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  gap: 5rem;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  text-align: center;
+}
+.landing__about__blokContext__title {
+  font-size: 2rem;
+  color: #fefddf;
+}
+.landing__about__blokContext__line {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 1rem;
+  pointer-events: none;
+}
+.landing__about__blokContext__text {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.landing__about__mask {
+  position: absolute;
+  left: 0%;
+  width: 40rem;
+  height: 90vh;
+  pointer-events: none;
+  overflow: hidden;
+}
 
+@media (max-width: 1550px) {
+  .landing__about__mask {
+    width: 30rem;
+  }
+}
+@media (max-width: 1200px) {
+  .landing__about__mask {
+    width: 20rem;
+  }
+}
 @media (max-width: 680px) {
   .landing__header__MaskGroup {
     width: 10rem;
+  }
+  .landing__about__mask {
+    width: 15rem;
   }
 }
 @media (max-width: 595px) {
   .landing__header__MaskGroup {
     width: 7rem;
+  }
+  .landing__about__mask {
+    display: none;
   }
 }
 @media (max-width: 400px) {

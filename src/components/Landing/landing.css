@@ -133,8 +133,8 @@
 .landing__castleBlock__blokContext__grid {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: repeat(3, 15rem);
-  gap: 20px;
+  grid-template-columns: repeat(3, 13rem);
+  gap: 50px;
   justify-content: center;
 }
 .landing__castleBlock__blokContext__grid__imgBlock {
@@ -163,6 +163,69 @@
 }
 .landing__castleBlock__blokContext__grid__imgBlock__img:hover {
   box-shadow: 0px 0px 2rem 1rem rgba(255, 0, 0, 0.4);
+}
+.landing__other {
+  display: flex;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+.landing__other__blokContext {
+  display: grid;
+  position: absolute;
+  top: 330%;
+  left: 50%;
+  gap: 3rem;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  text-align: center;
+}
+.landing__other__blokContext__title {
+  font-size: 2rem;
+  color: #fefddf;
+}
+.landing__other__blokContext__line {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 1rem;
+  pointer-events: none;
+}
+.landing__other__blokContext__section {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 10rem);
+  gap: 50px;
+  justify-content: center;
+}
+.landing__other__blokContext__p {
+  min-height: 3rem;
+  color: red;
+}
+
+.button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+}
+
+.button.active {
+  background: #3e6ae1;
+  color: #fff;
 }
 
 @media (max-width: 1550px) {
@@ -196,6 +259,14 @@
   }
   .landing__about__mask {
     display: none;
+  }
+  .landing__other__blokContext__section {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 10rem);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 400px) {

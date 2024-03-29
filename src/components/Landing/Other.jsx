@@ -42,11 +42,6 @@ export default function Other() {
                         Text 3
                     </Button>
                 </section>
-                {!contentType && (
-                    <p className="landing__other__blokContext__p">
-                        click button
-                    </p>
-                )}
                 {contentType && (
                     <p className="landing__other__blokContext__p">
                         {differences[contentType]}

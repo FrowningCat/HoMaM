@@ -5,12 +5,14 @@ $aboutTextColor: #fff;
 $titleCapitalletterTextColor: #ed1b24;
 $bgButtonColor: #ed1b24;
 $textButtonColor: #fefddf;
+$textNameCastleColor: #fefddf;
 
 $textSizeProject: 1rem;
 $textSizeCompany: 3rem;
 $textSizeButton: 1.25rem;
 $textSizeTitle: 2rem;
 $textSizeAbout: 1.8rem;
+$textSizeNameCastle: 1.5rem;
 
 .landing {
     box-sizing: border-box;
@@ -116,6 +118,67 @@ $textSizeAbout: 1.8rem;
             overflow: hidden;
         }
     }
+    &__castleBlock {
+        width: 100vw;
+        height: 100vh;
+        &__blokContext {
+            display: grid;
+            position: absolute;
+            top: 230%;
+            left: 50%;
+            gap: 5rem;
+            transform: translate(-50%, -50%);
+            align-items: center;
+            text-align: center;
+            &__title {
+                font-size: $textSizeTitle;
+                color: $aboutTitleTextColor;
+            }
+            &__line {
+                position: absolute;
+                top: 15%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 20rem;
+                height: 1rem;
+                pointer-events: none;
+            }
+            &__grid {
+                display: grid;
+                flex-wrap: wrap;
+                grid-template-columns: repeat(3, 15rem);
+                gap: 20px;
+                justify-content: center;
+                &__imgBlock {
+                    display: grid;
+                    gap: 1rem;
+                    &__img {
+                        width: 13rem;
+                        height: 13rem;
+                        cursor: pointer;
+                    }
+                    &__text {
+                        color: $textNameCastleColor;
+                        font-size: $textSizeNameCastle;
+                        pointer-events: none;
+                    }
+                    &__img:hover + &__text {
+                        box-sizing: border-box;
+                        align-items: center;
+                        justify-content: center;
+                        margin: auto;
+                        display: flex;
+                        left: 50%;
+                        width: 5rem;
+                        border-bottom: 1px solid red;
+                    }
+                    &__img:hover {
+                        box-shadow: 0px 0px 2rem 1rem rgba(255, 0, 0, 0.4);
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1550px) {
@@ -150,6 +213,17 @@ $textSizeAbout: 1.8rem;
                 width: 15rem;
             }
         }
+        &__castleBlock {
+            &__blokContext {
+                &__grid {
+                    display: grid;
+                    flex-wrap: wrap;
+                    grid-template-columns: repeat(2, 15rem);
+                    gap: 20px;
+                    justify-content: center;
+                }
+            }
+        }
     }
 }
 
@@ -173,6 +247,18 @@ $textSizeAbout: 1.8rem;
         &__header {
             &__MaskGroup {
                 width: 5rem;
+            }
+        }
+        &__castleBlock {
+            &__blokContext {
+                &__grid {
+                    margin-top: 3rem;
+                    display: grid;
+                    flex-wrap: wrap;
+                    grid-template-columns: repeat(1, 13rem);
+                    gap: 20px;
+                    justify-content: center;
+                }
             }
         }
     }

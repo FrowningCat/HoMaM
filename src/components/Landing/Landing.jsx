@@ -1,6 +1,7 @@
 import './landing.css';
 import Header from './Header';
 import About from './About';
+import CastleBlock from './CastleBlock';
 
 export default function Landing() {
     return (
@@ -8,6 +9,7 @@ export default function Landing() {
             <div className="landing">
                 <Header />
                 <About />
+                <CastleBlock />
             </div>
         </>
     );

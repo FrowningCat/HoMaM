@@ -42,6 +42,11 @@ export default function Other() {
                         Lorem
                     </Button>
                 </section>
+                {!contentType && (
+                    <p className="landing__other__blokContext__p">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                )}
                 {contentType && (
                     <p className="landing__other__blokContext__p">
                         {differences[contentType]}

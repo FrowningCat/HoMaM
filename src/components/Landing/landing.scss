@@ -269,7 +269,7 @@ $textSizeNameCastle: 1.5rem;
             &__section {
                 display: grid;
                 flex-wrap: wrap;
-                grid-template-columns: repeat(auto-fill, 10rem);
+                grid-template-columns: repeat(3, 10rem);
                 gap: 50px;
                 justify-content: center;
             }

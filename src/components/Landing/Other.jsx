@@ -27,19 +27,19 @@ export default function Other() {
                         isActive={contentType === 'way'}
                         onClick={() => handleClick('way')}
                     >
-                        Text 1
+                        Lorem
                     </Button>
                     <Button
                         isActive={contentType === 'easy'}
                         onClick={() => handleClick('easy')}
                     >
-                        Text 2
+                        Lorem
                     </Button>
                     <Button
                         isActive={contentType === 'program'}
                         onClick={() => handleClick('program')}
                     >
-                        Text 3
+                        Lorem
                     </Button>
                 </section>
                 {contentType && (

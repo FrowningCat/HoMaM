@@ -1,6 +1,6 @@
 export const differences = {
-    way: 'Узконаправленный подход. Учим только фронтенду, поэтому вы получаете именно те знания, за которыми пришли.',
-    easy: 'Доступность обучения. Простыми словами объясняем сложные темы на понятных примерах.',
+    way: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    easy: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, praesentium ea asperiores nesciunt expedita itaque mollitia commodi voluptatum! Consequuntur, eaque!',
     program:
-        'Концентрация знаний. Например, модуль «HTML&CSS» даст вам столько же умений и навыков, как и 6 месяцев обучения по этой программе в госуниверситете.',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas perferendis amet odit, nulla est ratione, quasi similique dolorem, libero tempora sapiente excepturi officiis aperiam quisquam labore molestias. Fuga, atque ut.',
 };

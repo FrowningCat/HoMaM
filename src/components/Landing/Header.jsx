@@ -20,9 +20,9 @@ export default function Header() {
                 <p className="landing__header__title__nameProject">
                     Heroes of Might and Magic III
                 </p>
-                <button className="landing__header__title__button">
-                    ЗАМКИ
-                </button>
+                <a href="#castl" className="landing__header__title__button">
+                    <text>ЗАМКИ</text>
+                </a>
             </div>
             <img
                 src={MaskGroup}

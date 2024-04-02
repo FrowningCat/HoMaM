@@ -32,6 +32,10 @@
   color: #bdbdbd;
 }
 .landing__header__title__button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   font-size: 1.25rem;
   border: none;
   height: 2rem;
@@ -137,21 +141,48 @@
   gap: 50px;
   justify-content: center;
 }
-.landing__castleBlock__blokContext__grid__imgBlock {
+.landing__castleBlock__blokContext__grid__imgBlockC {
   display: grid;
   gap: 1rem;
 }
-.landing__castleBlock__blokContext__grid__imgBlock__img {
+.landing__castleBlock__blokContext__grid__imgBlockC__img {
   width: 13rem;
   height: 13rem;
   cursor: pointer;
 }
-.landing__castleBlock__blokContext__grid__imgBlock__text {
+.landing__castleBlock__blokContext__grid__imgBlockC__text {
   color: #fefddf;
   font-size: 1.5rem;
   pointer-events: none;
 }
-.landing__castleBlock__blokContext__grid__imgBlock__img:hover + .landing__castleBlock__blokContext__grid__imgBlock__text {
+.landing__castleBlock__blokContext__grid__imgBlockC__img:hover + .landing__castleBlock__blokContext__grid__imgBlockC__text {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  left: 50%;
+  width: 5rem;
+  border-bottom: 1px solid white;
+}
+.landing__castleBlock__blokContext__grid__imgBlockC__img:hover {
+  box-shadow: 0px 0px 2rem 1rem rgba(246, 252, 254, 0.4);
+}
+.landing__castleBlock__blokContext__grid__imgBlockI {
+  display: grid;
+  gap: 1rem;
+}
+.landing__castleBlock__blokContext__grid__imgBlockI__img {
+  width: 13rem;
+  height: 13rem;
+  cursor: pointer;
+}
+.landing__castleBlock__blokContext__grid__imgBlockI__text {
+  color: #fefddf;
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+.landing__castleBlock__blokContext__grid__imgBlockI__img:hover + .landing__castleBlock__blokContext__grid__imgBlockI__text {
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
@@ -161,8 +192,35 @@
   width: 5rem;
   border-bottom: 1px solid red;
 }
-.landing__castleBlock__blokContext__grid__imgBlock__img:hover {
+.landing__castleBlock__blokContext__grid__imgBlockI__img:hover {
   box-shadow: 0px 0px 2rem 1rem rgba(255, 0, 0, 0.4);
+}
+.landing__castleBlock__blokContext__grid__imgBlockP {
+  display: grid;
+  gap: 1rem;
+}
+.landing__castleBlock__blokContext__grid__imgBlockP__img {
+  width: 13rem;
+  height: 13rem;
+  cursor: pointer;
+}
+.landing__castleBlock__blokContext__grid__imgBlockP__text {
+  color: #fefddf;
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+.landing__castleBlock__blokContext__grid__imgBlockP__img:hover + .landing__castleBlock__blokContext__grid__imgBlockP__text {
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  left: 50%;
+  width: 5rem;
+  border-bottom: 1px solid blue;
+}
+.landing__castleBlock__blokContext__grid__imgBlockP__img:hover {
+  box-shadow: 0px 0px 2rem 1rem rgba(39, 175, 245, 0.4);
 }
 .landing__other {
   display: flex;
@@ -312,6 +370,14 @@
 @media (max-width: 1200px) {
   .landing__about__mask {
     width: 20rem;
+  }
+  .angel {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .catl {
+    display: none;
   }
 }
 @media (max-width: 680px) {

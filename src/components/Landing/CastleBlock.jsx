@@ -2,7 +2,9 @@ import './landing.css';
 import line from '../../assets/line.png';
 import angell from '../../assets/angel.png';
 import catll from '../../assets/catl.png';
-import Rectangle1 from '../../assets/Rectangle 1.png';
+import castl from '../../assets/1.jpg';
+import inferno from '../../assets/2.png';
+import pri from '../../assets/3.jpg';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -33,7 +35,10 @@ export default function CastleBlock() {
             <img src={angell} alt="angel" className={angel} />
             <img src={catll} alt="catl" className={catl} />
             <div className="landing__castleBlock__blokContext">
-                <p className="landing__castleBlock__blokContext__title">
+                <p
+                    className="landing__castleBlock__blokContext__title"
+                    id="castl"
+                >
                     ЗАМКИ
                     <img
                         src={line}
@@ -43,35 +48,35 @@ export default function CastleBlock() {
                 </p>
                 <div className="landing__castleBlock__blokContext__grid">
                     <Link to={'/castle'}>
-                        <div className="landing__castleBlock__blokContext__grid__imgBlock">
+                        <div className="landing__castleBlock__blokContext__grid__imgBlockC">
                             <img
-                                src={Rectangle1}
+                                src={castl}
                                 alt="Rectangle1"
-                                className="landing__castleBlock__blokContext__grid__imgBlock__img"
+                                className="landing__castleBlock__blokContext__grid__imgBlockC__img"
                             />
-                            <p className="landing__castleBlock__blokContext__grid__imgBlock__text">
+                            <p className="landing__castleBlock__blokContext__grid__imgBlockC__text">
                                 Замок
                             </p>
                         </div>
                     </Link>
-                    <div className="landing__castleBlock__blokContext__grid__imgBlock">
+                    <div className="landing__castleBlock__blokContext__grid__imgBlockI">
                         <img
-                            src={Rectangle1}
+                            src={inferno}
                             alt="Rectangle1"
-                            className="landing__castleBlock__blokContext__grid__imgBlock__img"
+                            className="landing__castleBlock__blokContext__grid__imgBlockI__img"
                         />
-                        <p className="landing__castleBlock__blokContext__grid__imgBlock__text">
-                            Замок
+                        <p className="landing__castleBlock__blokContext__grid__imgBlockI__text">
+                            Инферно
                         </p>
                     </div>
-                    <div className="landing__castleBlock__blokContext__grid__imgBlock">
+                    <div className="landing__castleBlock__blokContext__grid__imgBlockP">
                         <img
-                            src={Rectangle1}
+                            src={pri}
                             alt="Rectangle1"
-                            className="landing__castleBlock__blokContext__grid__imgBlock__img"
+                            className="landing__castleBlock__blokContext__grid__imgBlockP__img"
                         />
-                        <p className="landing__castleBlock__blokContext__grid__imgBlock__text">
-                            Замок
+                        <p className="landing__castleBlock__blokContext__grid__imgBlockP__text">
+                            Причал
                         </p>
                     </div>
                 </div>

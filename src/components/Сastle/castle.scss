@@ -6,6 +6,7 @@ $titleCapitalletterTextColor: #ed1b24;
 $bgButtonColor: #ed1b24;
 $textButtonColor: #fefddf;
 $textNameCastleColor: #fefddf;
+$bordercolor: #fdf5f5;
 
 $textSizeProject: 1rem;
 $textSizeCompany: 3rem;
@@ -55,6 +56,7 @@ $textSizeNameCastle: 1.5rem;
         }
     }
     &__nameBlock {
+        z-index: 2;
         display: grid;
         position: absolute;
         top: 40%;
@@ -69,24 +71,55 @@ $textSizeNameCastle: 1.5rem;
             font-size: $textSizeTitle;
         }
         &__castleImg {
-            width: 10rem;
-            height: 10rem;
+            width: 15rem;
+            height: 15rem;
+            pointer-events: none;
         }
-        &__imgRight {
-            height: 25rem;
-            width: 6rem;
-            display: grid;
-            position: absolute;
-            top: 60%;
-            right: 455%;
+    }
+    &__description {
+        z-index: 1;
+        width: 60vw;
+        min-height: 10vh;
+        display: grid;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 1rem;
+        border: 1px solid $bordercolor;
+        box-shadow: inset 0px 1rem 5rem 1px rgba(253, 245, 245, 0.2);
+        &__title {
+            margin-top: 5rem;
+            color: $textNameCastleColor;
+            font-size: $textSizeTitle;
         }
-        &__imgLeft {
-            height: 25rem;
-            width: 6rem;
-            display: grid;
-            position: absolute;
-            top: 60%;
-            left: 455%;
-        }
+    }
+}
+
+.imgRight {
+    height: 25rem;
+    width: 6rem;
+    display: grid;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+}
+.imgLeft {
+    height: 25rem;
+    width: 7rem;
+    display: grid;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+}
+
+@media (max-width: 370px) {
+    .imgRight {
+        display: none;
+    }
+    .imgLeft {
+        display: none;
     }
 }

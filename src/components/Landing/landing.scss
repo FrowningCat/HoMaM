@@ -45,6 +45,10 @@ $textSizeNameCastle: 1.5rem;
                 color: $titleTextColor;
             }
             &__button {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
                 font-size: $textSizeButton;
                 border: none;
                 height: 2rem;
@@ -149,7 +153,34 @@ $textSizeNameCastle: 1.5rem;
                 grid-template-columns: repeat(3, 13rem);
                 gap: 50px;
                 justify-content: center;
-                &__imgBlock {
+                &__imgBlockC {
+                    display: grid;
+                    gap: 1rem;
+                    &__img {
+                        width: 13rem;
+                        height: 13rem;
+                        cursor: pointer;
+                    }
+                    &__text {
+                        color: $textNameCastleColor;
+                        font-size: $textSizeNameCastle;
+                        pointer-events: none;
+                    }
+                    &__img:hover + &__text {
+                        box-sizing: border-box;
+                        align-items: center;
+                        justify-content: center;
+                        margin: auto;
+                        display: flex;
+                        left: 50%;
+                        width: 5rem;
+                        border-bottom: 1px solid white;
+                    }
+                    &__img:hover {
+                        box-shadow: 0px 0px 2rem 1rem rgba(246, 252, 254, 0.4);
+                    }
+                }
+                &__imgBlockI {
                     display: grid;
                     gap: 1rem;
                     &__img {
@@ -174,6 +205,33 @@ $textSizeNameCastle: 1.5rem;
                     }
                     &__img:hover {
                         box-shadow: 0px 0px 2rem 1rem rgba(255, 0, 0, 0.4);
+                    }
+                }
+                &__imgBlockP {
+                    display: grid;
+                    gap: 1rem;
+                    &__img {
+                        width: 13rem;
+                        height: 13rem;
+                        cursor: pointer;
+                    }
+                    &__text {
+                        color: $textNameCastleColor;
+                        font-size: $textSizeNameCastle;
+                        pointer-events: none;
+                    }
+                    &__img:hover + &__text {
+                        box-sizing: border-box;
+                        align-items: center;
+                        justify-content: center;
+                        margin: auto;
+                        display: flex;
+                        left: 50%;
+                        width: 5rem;
+                        border-bottom: 1px solid blue;
+                    }
+                    &__img:hover {
+                        box-shadow: 0px 0px 2rem 1rem rgba(39, 175, 245, 0.4);
                     }
                 }
             }
@@ -339,6 +397,16 @@ $textSizeNameCastle: 1.5rem;
                 width: 20rem;
             }
         }
+    }
+
+    .angel {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .catl {
+        display: none;
     }
 }
 

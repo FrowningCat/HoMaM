@@ -1,10 +1,11 @@
 import './castle.css';
+import Header from './Header';
 
 export default function Castle() {
     return (
         <>
             <div className="castle">
-                <h1>Castle</h1>
+                <Header />
             </div>
         </>
     );

@@ -1,0 +1,56 @@
+$bgColor: #000;
+$titleTextColor: #bdbdbd;
+$aboutTitleTextColor: #fefddf;
+$aboutTextColor: #fff;
+$titleCapitalletterTextColor: #ed1b24;
+$bgButtonColor: #ed1b24;
+$textButtonColor: #fefddf;
+$textNameCastleColor: #fefddf;
+
+$textSizeProject: 1rem;
+$textSizeCompany: 3rem;
+$textSizeButton: 1.25rem;
+$textSizeTitle: 2rem;
+$textSizeAbout: 1.8rem;
+$textSizeNameCastle: 1.5rem;
+
+.castle {
+    box-sizing: border-box;
+    display: grid;
+    background-color: $bgColor;
+    overflow: hidden;
+    &__header {
+        &__blockText {
+            margin-top: 10vh;
+            margin-left: 10%;
+            width: 80vw;
+            display: flex;
+            justify-content: space-between;
+            &__nameCompany {
+                text-align: center;
+                font-size: $textSizeProject;
+                color: $titleTextColor;
+                &__capitalLetter {
+                    color: $titleCapitalletterTextColor;
+                }
+            }
+            &__button {
+                display: flex;
+                background-color: $bgButtonColor;
+                color: $textButtonColor;
+                font-size: $textSizeProject;
+                text-align: center;
+                border-radius: 1rem;
+                align-items: center;
+                cursor: pointer;
+                transition: 0.5s;
+                &__text {
+                    margin: 0.5rem 1rem;
+                }
+            }
+            &__button:hover {
+                box-shadow: 0px 0px 6rem 2rem rgba(255, 150, 150, 0.4);
+            }
+        }
+    }
+}

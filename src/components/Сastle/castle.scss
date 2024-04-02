@@ -72,5 +72,21 @@ $textSizeNameCastle: 1.5rem;
             width: 10rem;
             height: 10rem;
         }
+        &__imgRight {
+            height: 25rem;
+            width: 6rem;
+            display: grid;
+            position: absolute;
+            top: 60%;
+            right: 455%;
+        }
+        &__imgLeft {
+            height: 25rem;
+            width: 6rem;
+            display: grid;
+            position: absolute;
+            top: 60%;
+            left: 455%;
+        }
     }
 }

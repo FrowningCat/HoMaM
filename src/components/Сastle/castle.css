@@ -55,4 +55,20 @@
 .castle__nameBlock__castleImg {
   width: 10rem;
   height: 10rem;
+}
+.castle__nameBlock__imgRight {
+  height: 25rem;
+  width: 6rem;
+  display: grid;
+  position: absolute;
+  top: 60%;
+  right: 455%;
+}
+.castle__nameBlock__imgLeft {
+  height: 25rem;
+  width: 6rem;
+  display: grid;
+  position: absolute;
+  top: 60%;
+  left: 455%;
 }/*# sourceMappingURL=castle.css.map */

@@ -20,7 +20,7 @@ $textSizeNameCastle: 1.5rem;
     display: grid;
     background-color: $bgColor;
     overflow: hidden;
-    height: 100vh;
+    height: 80rem;
     &__header {
         &__blockText {
             margin-top: 10vh;
@@ -94,6 +94,40 @@ $textSizeNameCastle: 1.5rem;
             margin-top: 5rem;
             color: $textNameCastleColor;
             font-size: $textSizeTitle;
+        }
+        &__generalDescription {
+            border-radius: 1rem;
+            color: $textNameCastleColor;
+            width: 40vw;
+            background-color: rgba($color: #464b50, $alpha: 0.3);
+            display: grid;
+            gap: 2rem;
+            margin-bottom: 1rem;
+            &__title {
+                margin-top: 1rem;
+                font-size: 2rem;
+            }
+            &__ul {
+                width: 25vw;
+                margin-left: 2rem;
+                text-align: left;
+                display: grid;
+                gap: 1rem;
+                margin-bottom: 1rem;
+                &__li {
+                    &__ul {
+                        width: 25vw;
+                        margin-left: 5rem;
+                        text-align: left;
+                        display: grid;
+                        margin-bottom: 1rem;
+                        &__li {
+                            color: #bdbdbd;
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -3,7 +3,7 @@
   display: grid;
   background-color: #000;
   overflow: hidden;
-  height: 100vh;
+  height: 80rem;
 }
 .castle__header__blockText {
   margin-top: 10vh;
@@ -77,6 +77,38 @@
   margin-top: 5rem;
   color: #fefddf;
   font-size: 2rem;
+}
+.castle__description__generalDescription {
+  border-radius: 1rem;
+  color: #fefddf;
+  width: 40vw;
+  background-color: rgba(70, 75, 80, 0.3);
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.castle__description__generalDescription__title {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.castle__description__generalDescription__ul {
+  width: 25vw;
+  margin-left: 2rem;
+  text-align: left;
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.castle__description__generalDescription__ul__li__ul {
+  width: 25vw;
+  margin-left: 5rem;
+  text-align: left;
+  display: grid;
+  margin-bottom: 1rem;
+}
+.castle__description__generalDescription__ul__li__ul__li {
+  color: #bdbdbd;
+  margin-top: 1rem;
 }
 
 .imgRight {

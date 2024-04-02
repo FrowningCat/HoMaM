@@ -178,6 +178,8 @@ $textSizeNameCastle: 1.5rem;
                 }
             }
         }
+        &__imgA {
+        }
     }
     &__other {
         display: flex;
@@ -268,6 +270,33 @@ $textSizeNameCastle: 1.5rem;
             pointer-events: none;
         }
     }
+}
+
+.angelHidden {
+    display: none;
+}
+
+.angel {
+    display: block;
+    position: absolute;
+    top: 210%;
+    width: 30vw;
+    height: 70vh;
+    pointer-events: none;
+}
+
+.catlHidden {
+    display: none;
+}
+
+.catl {
+    display: block;
+    position: absolute;
+    top: 310%;
+    left: 75%;
+    width: 20vw;
+    height: 90vh;
+    pointer-events: none;
 }
 
 .button {

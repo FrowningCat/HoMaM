@@ -4,6 +4,7 @@ import angell from '../../assets/angel.png';
 import catll from '../../assets/catl.png';
 import Rectangle1 from '../../assets/Rectangle 1.png';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function CastleBlock() {
     const [angel, setAngel] = useState('angel');
@@ -41,16 +42,18 @@ export default function CastleBlock() {
                     />
                 </p>
                 <div className="landing__castleBlock__blokContext__grid">
-                    <div className="landing__castleBlock__blokContext__grid__imgBlock">
-                        <img
-                            src={Rectangle1}
-                            alt="Rectangle1"
-                            className="landing__castleBlock__blokContext__grid__imgBlock__img"
-                        />
-                        <p className="landing__castleBlock__blokContext__grid__imgBlock__text">
-                            Замок
-                        </p>
-                    </div>
+                    <Link to={'/castle'}>
+                        <div className="landing__castleBlock__blokContext__grid__imgBlock">
+                            <img
+                                src={Rectangle1}
+                                alt="Rectangle1"
+                                className="landing__castleBlock__blokContext__grid__imgBlock__img"
+                            />
+                            <p className="landing__castleBlock__blokContext__grid__imgBlock__text">
+                                Замок
+                            </p>
+                        </div>
+                    </Link>
                     <div className="landing__castleBlock__blokContext__grid__imgBlock">
                         <img
                             src={Rectangle1}

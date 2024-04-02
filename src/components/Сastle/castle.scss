@@ -19,6 +19,7 @@ $textSizeNameCastle: 1.5rem;
     display: grid;
     background-color: $bgColor;
     overflow: hidden;
+    height: 100vh;
     &__header {
         &__blockText {
             margin-top: 10vh;
@@ -51,6 +52,25 @@ $textSizeNameCastle: 1.5rem;
             &__button:hover {
                 box-shadow: 0px 0px 6rem 2rem rgba(255, 150, 150, 0.4);
             }
+        }
+    }
+    &__nameBlock {
+        display: grid;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        gap: 1rem;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        &__nameCastle {
+            color: $textNameCastleColor;
+            font-size: $textSizeTitle;
+        }
+        &__castleImg {
+            width: 10rem;
+            height: 10rem;
         }
     }
 }

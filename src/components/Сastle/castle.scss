@@ -158,6 +158,18 @@ $textSizeNameCastle: 1.5rem;
     cursor: pointer;
 }
 
+@media (max-width: 540px) {
+    .castle {
+        height: 85rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .castle {
+        height: 90rem;
+    }
+}
+
 @media (max-width: 370px) {
     .imgRight {
         display: none;

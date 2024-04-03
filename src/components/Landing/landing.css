@@ -402,6 +402,13 @@
   .landing__about__mask {
     display: none;
   }
+  .landing__other__blokContext__section {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(1, 10rem);
+    gap: 30px;
+    justify-content: center;
+  }
 }
 @media (max-width: 400px) {
   .landing__header__MaskGroup {
@@ -414,6 +421,9 @@
     grid-template-columns: repeat(1, 13rem);
     gap: 20px;
     justify-content: center;
+  }
+  .landing__other__blokContext__section {
+    margin-top: 2rem;
   }
 }
 @media (max-width: 360px) {

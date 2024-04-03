@@ -450,14 +450,13 @@ $textSizeNameCastle: 1.5rem;
         }
         &__other {
             &__blokContext {
-                // &__section {
-                //     display: grid;
-                //     flex-wrap: wrap;
-                //     grid-template-columns: repeat(auto-fill, 10rem);
-                //     border: 1px solid red;
-                //     gap: 30px;
-                //     justify-content: center;
-                // }
+                &__section {
+                    display: grid;
+                    flex-wrap: wrap;
+                    grid-template-columns: repeat(1, 10rem);
+                    gap: 30px;
+                    justify-content: center;
+                }
             }
         }
     }
@@ -479,6 +478,13 @@ $textSizeNameCastle: 1.5rem;
                     grid-template-columns: repeat(1, 13rem);
                     gap: 20px;
                     justify-content: center;
+                }
+            }
+        }
+        &__other {
+            &__blokContext {
+                &__section {
+                    margin-top: 2rem;
                 }
             }
         }
